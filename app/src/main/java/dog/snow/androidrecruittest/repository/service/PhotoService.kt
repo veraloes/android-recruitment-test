@@ -9,4 +9,8 @@ interface PhotoService {
     @GET("photos")
     fun getPhotos(): Call<List<RawPhoto>>
 
+    @GET("photo/id")
+    fun getPhotoById(photoId: Int): RawPhoto {
+        TODO("not implemented")
+    }
 }

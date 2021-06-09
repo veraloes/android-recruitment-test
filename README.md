@@ -1,9 +1,9 @@
-# Snowdog Android Recruitment test
+# Snowdog Android Recruitment Task
 
-### We are glad that you've joined SNOW.DOG recruitment process. Below is task for you, good luck!
+### I am glad that I've joined SNOW.DOG recruitment process. Below is task for me, good luck!
 
-1. Fork this repo to your github.
-2. The repository contains app resources: icons, color palette, layouts, fragments and activities. You can use whatever library, design patterns and dependency injection you want. You can add and modify all the things you want, just show us that you know Android :)
+1. ~Fork this repo to your github.~
+2. ~The repository contains app resources: icons, color palette, layouts, fragments and activities. You can use whatever library, design patterns and dependency injection you want. You can add and modify all the things you want, just show us that you know Android :) ~
 3. Your task is to create an app on top of this project:
 	1. Your main goal is to provide data
     	* download items from [jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com):
@@ -26,10 +26,7 @@
 4. Remember to commit as much as you can. Don't be afraid of mess in your commits, we will not look at your commit history :)
 5. Once you've completed the task, please **send us the link to your repo**. We would also be grateful for your **feedback** for this task. Feel free to send us your ideas about it, maybe we can improve it for future candidates.
 
-### Tips:
-* jsonplaceholder uses [`placeholder.com`](https://placeholder.com) which returns error 410 on Android devices. You need to change `User-agent` header of requests (to `Cool app` or something different than default).
-* jsonplaceholder response may took even one minute. Instead of increasing timeouts, try to retry requests few times. On second/third request it usually works fine.
-* If you want to use your http client to cache data, be aware of `Pragma` and `Age` headers.
+
 
 ### Demo:
 
