@@ -13,7 +13,7 @@
         android:clipToPadding="false"
         android:paddingTop="@dimen/search_size"
         android:scrollbars="vertical"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,5 +27,8 @@
 
     <include
         layout="@layout/layout_empty_view"
-        tools:visibility="gone" />
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="366dp"
+        tools:visibility="invisible" />
 </androidx.constraintlayout.widget.ConstraintLayout>
