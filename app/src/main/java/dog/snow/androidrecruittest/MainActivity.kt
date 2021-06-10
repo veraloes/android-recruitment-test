@@ -3,10 +3,12 @@ package dog.snow.androidrecruittest
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import dog.snow.androidrecruittest.repository.model.RawPhoto
 import dog.snow.androidrecruittest.repository.service.PhotoService
 import dog.snow.androidrecruittest.ui.adapter.Adapter
+import kotlinx.android.synthetic.main.layout_empty_view.*
 import kotlinx.android.synthetic.main.list_fragment.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -42,6 +44,7 @@ class MainActivity : AppCompatActivity(R.layout.main_activity) {
 
             override fun onFailure(call: Call<List<RawPhoto>>, t: Throwable) {
                 Log.d("plant", "onFail")
+                tv_empty.isVisible = true
             }
         })
     }
@@ -53,5 +56,9 @@ class MainActivity : AppCompatActivity(R.layout.main_activity) {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = Adapter(plants)
         }
+    }
+
+    override fun onBackPressed() {
+        Log.d("backButton", "pressed")
     }
 }
