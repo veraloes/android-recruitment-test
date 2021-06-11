@@ -1,4 +1,4 @@
-package dog.snow.androidrecruittest
+package dog.snow.androidrecruittest.feature.splashScreen
 
 import android.content.Context
 import android.content.Intent
@@ -6,18 +6,21 @@ import android.net.ConnectivityManager
 import android.os.Bundle
 import android.os.Handler
 import android.view.animation.AnimationUtils
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import dog.snow.androidrecruittest.R
+import dog.snow.androidrecruittest.application.base.BaseActivity
+import dog.snow.androidrecruittest.feature.main.MainActivity
 import kotlinx.android.synthetic.main.layout_progressbar.*
 import kotlinx.android.synthetic.main.splash_activity.*
 
-class SplashActivity : AppCompatActivity(R.layout.splash_activity) {
+class SplashActivity : BaseActivity(), SplashContract.View {
 
-    private var errorMessage: String = getString(R.string.offline_mode)
+    private var errorMessage: String = "Offline mode"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView((R.layout.splash_activity))
 
         checkInternetConnection()
     }

@@ -1,10 +1,11 @@
-package dog.snow.androidrecruittest
+package dog.snow.androidrecruittest.feature.main
 
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
+import dog.snow.androidrecruittest.R
+import dog.snow.androidrecruittest.application.base.BaseActivity
 import dog.snow.androidrecruittest.repository.model.RawPhoto
 import dog.snow.androidrecruittest.repository.service.PhotoService
 import dog.snow.androidrecruittest.ui.adapter.Adapter
@@ -16,9 +17,11 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class MainActivity : AppCompatActivity(R.layout.main_activity) {
+class MainActivity : BaseActivity(), MainContract.View {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.main_activity)
         setSupportActionBar(findViewById(R.id.toolbar))
 
         initializeRetrofit()
