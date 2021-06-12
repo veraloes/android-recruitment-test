@@ -1,6 +1,6 @@
 # Snowdog Android Recruitment Task
 
-###To Do:
+### To Do:
 * move downloading data to Splash screen instead of MainActivity
 * cache api data
 * restructure files to MVP pattern
@@ -13,7 +13,7 @@
 * create some animations/transitions
 
 
-### Demo:
+### Original Demo:
 
 ![Demo][demo]
 
