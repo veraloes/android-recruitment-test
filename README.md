@@ -1,6 +1,19 @@
+![Logo][logo]
+
 # Snowdog Android Recruitment Task
 
-![Logo][logo]
+## Installation
+Clone this repository and import into **Android Studio**
+```bash
+git clone https://github.com/veraloes/android-recruitment-test.git
+```
+
+## General info
+This app uses public api
+```bash
+https://jsonplaceholder.typicode.com
+```
+to display data.
 
 ## Technologies
 
@@ -30,7 +43,7 @@ SDK
 * Download albums from the endpoint [`/albums/{id}`](https://jsonplaceholder.typicode.com/albums/2) for `ids` that are in the downloaded photos (field: `albumId`). You can use `RawAlbum` model.
 * Download users from the endpoint [`/users/{id}`](https://jsonplaceholder.typicode.com/users/3) for `ids` that are in the downloaded albums (field: `userId`). You can use `RawUser` model.
 * filter data by name
-* check internet connection on MainActivity
+* check internet connection after 10 minutes after app start
 * display details on details screen
 * limit results to 100 on one page
 * use `R.id.search` to filter data by `title` and `albumTitle` in `RecyclerView`.
