@@ -1,9 +1,12 @@
 # Snowdog Android Recruitment Task
-![Demo][logo]
+
+![Logo][logo]
 
 ## Technologies
+
 Kotlin
 - ext.kotlin_version = '1.3.61'
+
 SDK
 - compileSdkVersion 29
 - minSdkVersion 21
@@ -43,4 +46,4 @@ SDK
 ![Demo][demo]
 
 [demo]: art/demo.gif
-[logo]: art/logo
+[logo]: art/logo.png
