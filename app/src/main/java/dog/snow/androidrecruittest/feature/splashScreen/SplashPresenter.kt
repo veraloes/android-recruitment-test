@@ -24,6 +24,6 @@ class SplashPresenter @Inject constructor(
     }
 
     companion object {
-        private const val SPLASH_DISPLAY_LENGTH: Long = 4000
+        private const val SPLASH_DISPLAY_LENGTH: Long = 2500
     }
 }
